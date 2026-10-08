@@ -13,8 +13,8 @@ class ListArray : public List<T> {
 
     public:
          ListArray(){
-                arr = new T(MINISIZE);
-                max = MINISIZE;
+                arr = new T(MINSIZE);
+                max = MINSIZE;
                 n = 0;
          };
 
@@ -23,10 +23,12 @@ class ListArray : public List<T> {
          };
 
          T operator[](int pos){
-                 if(pos < 0 || pos > (size()-1)){
-                        throw std::out_of_range;
+                 if(pos < 0 || pos > size()-1){
+                        throw std::out_of_range
                  };
                  return arr[pos];
          }
 
 };
+~                                                                                                                                                                                             
+~           
