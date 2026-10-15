@@ -5,7 +5,7 @@
 using namespace std
 template<typename T>
 
-int busquedaBinaria(T val, vector& v, int ini, int fin){
+int busquedaBinaria(T val, vector<T>& v, int ini, int fin){
         if(ini > fin){
                 cout << "No se encuentra en el array" << endl;
                 return -1;
@@ -28,6 +28,7 @@ void QuickSort(vector& v, int ini, int fin){
                 QuickSort(v, pivot + 1, fin);
         }
 }
+template<typename T>
 int Partition(vector& v, int ini, int fin){
         T val = v[fin];
         int i = ini;
